@@ -1,0 +1,35 @@
+{
+  "reference": "D:\\MNSIM-2.0_iscas2026_portable_20261002\\.validation\\wp-rram-spice-model\\program_256_1p3v_run\\levels.csv",
+  "hspice": "C:\\Synopsys\\Hspice_C-2009.09\\BIN\\hspice.exe",
+  "model": "D:\\MNSIM-2.0_iscas2026_portable_20261002\\.validation\\wp-rram-spice-model\\rram_hspice_manual.cml",
+  "protocol": {
+    "levels": 256,
+    "read_voltage_V": 0.1,
+    "reset_voltage_V": -1.5,
+    "reset_pulse_ns": 100.0,
+    "set_voltage_V": 1.3,
+    "max_set_pulse_ns": 1000.0,
+    "tran_step_ns": 0.005,
+    "method": "trap",
+    "state_transfer": "gap_after from accepted HSPICE run becomes gap_before for next level"
+  },
+  "reset": {
+    "gap": 1.6306716165,
+    "read_current_A": 6.036891407639001e-07,
+    "pulse_ns": 100.0,
+    "deck": "trial_00001_reset.sp",
+    "listing": "trial_00001_reset.lis"
+  },
+  "baseline": {
+    "gap": 1.6306715652,
+    "read_current_A": 6.036892647216e-07,
+    "pulse_ns": 0.0,
+    "deck": "trial_00002_baseline.sp",
+    "listing": "trial_00002_baseline.lis"
+  },
+  "trial_count": 1223,
+  "min_adjacent_read_current_A": 3.104390352e-07,
+  "max_abs_target_error_A": 6.91759791e-08,
+  "all_read_currents_strictly_increasing": true,
+  "all_gaps_strictly_decreasing": true
+}

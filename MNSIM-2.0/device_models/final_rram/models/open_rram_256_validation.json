@@ -1,0 +1,25 @@
+{
+  "boundary": "256 nominal frozen-state readback levels; no programming/variation calibration",
+  "external_hspice_energy_read": false,
+  "external_spice_execution": false,
+  "models": {
+    "rram_memtorch_stanford_pku_256": {
+      "conductance_max_us": 1845.0184501845022,
+      "conductance_min_us": 4.57485840813227,
+      "distinct_conductance_levels": 256,
+      "hardware_write_accounting_supported": false,
+      "levels": 256,
+      "levels_sha256": "720317441f9aae9c59504f1a502a47e7f5802eed2bf207062eeac6b0966de4df",
+      "max_readback_relative_error": 4.440892098500626e-16,
+      "model_sha256": "fffbbb6c67277c050125c91d553b87abaf972707fcad0c75d0e052a649797752",
+      "native_state_within_bounds": true,
+      "on_off_ratio": 403.2952029520294,
+      "positive_finite_resistance": true,
+      "resistance_max_ohm": 218585.9999999999,
+      "resistance_min_ohm": 541.9999999999999,
+      "source_checksum_verified": true,
+      "strictly_increasing_conductance": true
+    }
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,42 @@
+# Local environments and caches
+.conda-envs/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Reproducible but large local inputs and generated runs
+MNSIM-2.0/inputs/datasets/
+MNSIM-2.0/inputs/weights/
+MNSIM-2.0/runs/
+MNSIM-2.0/exports/
+MNSIM-2.0/deliverables/
+MNSIM-2.0/docs/experiments/
+MNSIM-2.0/PORTABLE_PYTHON_ENV.txt
+MNSIM-2.0/PORTABLE_RUNTIME_INFO.txt
+MNSIM-2.0/PORTABLE_BUNDLE_INFO.txt
+
+# Generated native build output
+MNSIM-2.0/third_party/DRAMSim3/build/
+MNSIM-2.0/third_party/DRAMSim3/bin/
+MNSIM-2.0/third_party/DRAMSim3/lib/
+
+# Local editor and runtime files
+.vscode/
+.idea/
+*.log
+
+# Local handoff material and duplicated source drop
+/HANDOFF_*.md
+/rram_open_source_models_detailed_*.md
+/stanford_asu_rram_mnsim/
+
+# Keep the local paper and experiment workspace out of the code release.
+/iscas_2026/**
+
+# The underscore-free alias is a local convenience symlink, not repo content.
+/iscas2026
+*.tmp

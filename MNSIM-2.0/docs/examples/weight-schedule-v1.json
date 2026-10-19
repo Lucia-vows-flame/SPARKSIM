@@ -1,0 +1,15 @@
+{
+  "format": "mnsim.weight_schedule",
+  "schema_version": 1,
+  "policy_id": "my_scheduler",
+  "rounds": [
+    {
+      "round_id": "R0",
+      "assignments": {"tile:0": 1, "tile:1": 0}
+    },
+    {
+      "round_id": "R1",
+      "assignments": {"tile:0": 0}
+    }
+  ]
+}

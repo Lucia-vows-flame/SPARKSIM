@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MNSIM custom weight schedule v1",
+  "description": "Custom tile assignment and round order decisions; resource and dependency checks are performed by MNSIM.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "schema_version", "policy_id", "rounds"],
+  "properties": {
+    "format": {"const": "mnsim.weight_schedule"},
+    "schema_version": {"type": "integer", "const": 1},
+    "policy_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"},
+    "rounds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["round_id", "assignments"],
+        "properties": {
+          "round_id": {"$ref": "#/$defs/nonEmptyText"},
+          "assignments": {
+            "type": "object",
+            "minProperties": 1,
+            "propertyNames": {"$ref": "#/$defs/nonEmptyText"},
+            "additionalProperties": {"type": "integer", "minimum": 0}
+          },
+          "metadata": {"type": "object"}
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "model_id": {"$ref": "#/$defs/nonEmptyText"},
+        "base_round_plan_sha256": {"$ref": "#/$defs/sha256"},
+        "model_ir_sha256": {"$ref": "#/$defs/sha256"},
+        "weights_sha256": {"$ref": "#/$defs/sha256"},
+        "sim_config_sha256": {"$ref": "#/$defs/sha256"},
+        "device_model_id": {"$ref": "#/$defs/nonEmptyText"}
+      }
+    },
+    "metadata": {"type": "object"}
+  },
+  "$defs": {
+    "nonEmptyText": {"type": "string", "pattern": "\\S"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

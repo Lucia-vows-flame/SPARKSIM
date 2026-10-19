@@ -1,0 +1,15 @@
+{
+  "run_dir": "runs/mobilenet_snn_v7_phase6_retrain_20261010_b64_adamw_tau2_current",
+  "batch": 64,
+  "seed": 20261010,
+  "lif_tau": 2.0,
+  "lif_threshold": 0.5,
+  "readout": "membrane",
+  "pretrain_optimizer": "adamw",
+  "pretrain_lr": 0.001,
+  "pretrain_epochs": 120,
+  "pretrain_milestones": [40, 80],
+  "finetune_lr": 0.0001,
+  "finetune_epochs": 20,
+  "finetune_freeze_bn": true
+}

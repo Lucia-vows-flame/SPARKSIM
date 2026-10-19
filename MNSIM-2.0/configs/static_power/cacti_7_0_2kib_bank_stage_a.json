@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "profile_id": "cacti-7.0-2kib-lstp-bank-stage-a",
+  "evidence_scope": "physically_grounded_architecture_estimate",
+  "implementation_specific": false,
+  "boundary_id": "round_orchestrated_accelerator_core_static_v1",
+  "pvt": {
+    "technology_nm": 40,
+    "voltage_v": 1.061538,
+    "temperature_c": 26.85,
+    "process_corner": "cacti_itrs_lstp_40nm_interpolated"
+  },
+  "source_generator": {
+    "tool": "CACTI 7.0 prerelease",
+    "revision": "1ffd8dfb10303d306ecd8d215320aea07651e878",
+    "binary_sha256": "6e79c30bd1edf5fda17a8e4f49edf04b97322a17000216bd394300bc3fd06040",
+    "power_gating": false,
+    "ecc": false,
+    "optimization_mode": "NONE",
+    "uca_objective_weights": "0:0:100:0:0",
+    "candidate_only": true
+  },
+  "blocks": {
+    "pe_input_buffer": {
+      "model_kind": "fixed_bank_macro_replication",
+      "bank_capacity_bits": 16384,
+      "capacity_unit": "bit",
+      "evidence_level": "cacti_architecture_estimate",
+      "macro_characterization": {
+        "capacity_bits": 16384,
+        "bank_count": 1,
+        "input_output_width_bits": 128,
+        "read_write_ports": 1,
+        "device_flavor": "itrs-lstp",
+        "access_time_ns": 0.71894,
+        "subthreshold_leakage_power_w": 5.13732e-8,
+        "gate_leakage_power_w": 4.34823e-8,
+        "power_unit": "W",
+        "source_input_sha256": "1a1aa65f323f09f34b92f673bd1237ce52f18cbd9119500f81e620881642963b",
+        "source_output_sha256": "4e1e1867d8d9748a8eeac35cabe5c6ecc8532f1000e8ae9829d138eefb649165",
+        "source_csv_sha256": "08fd0eb80049a9671008b509c943de2424c3b1a5f00ab5a37b631248d53bf45b"
+      }
+    },
+    "tile_state_output_buffer": {
+      "model_kind": "fixed_bank_macro_replication",
+      "bank_capacity_bits": 16384,
+      "capacity_unit": "bit",
+      "evidence_level": "cacti_architecture_estimate",
+      "macro_characterization": {
+        "capacity_bits": 16384,
+        "bank_count": 1,
+        "input_output_width_bits": 128,
+        "read_write_ports": 1,
+        "device_flavor": "itrs-lstp",
+        "access_time_ns": 0.71894,
+        "subthreshold_leakage_power_w": 5.13732e-8,
+        "gate_leakage_power_w": 4.34823e-8,
+        "power_unit": "W",
+        "source_input_sha256": "1a1aa65f323f09f34b92f673bd1237ce52f18cbd9119500f81e620881642963b",
+        "source_output_sha256": "4e1e1867d8d9748a8eeac35cabe5c6ecc8532f1000e8ae9829d138eefb649165",
+        "source_csv_sha256": "08fd0eb80049a9671008b509c943de2424c3b1a5f00ab5a37b631248d53bf45b"
+      }
+    },
+    "boundary_state_buffer": {
+      "model_kind": "fixed_bank_macro_replication",
+      "bank_capacity_bits": 16384,
+      "capacity_unit": "bit",
+      "evidence_level": "cacti_architecture_estimate",
+      "macro_characterization": {
+        "capacity_bits": 16384,
+        "bank_count": 1,
+        "input_output_width_bits": 128,
+        "read_write_ports": 1,
+        "device_flavor": "itrs-lstp",
+        "access_time_ns": 0.71894,
+        "subthreshold_leakage_power_w": 5.13732e-8,
+        "gate_leakage_power_w": 4.34823e-8,
+        "power_unit": "W",
+        "source_input_sha256": "1a1aa65f323f09f34b92f673bd1237ce52f18cbd9119500f81e620881642963b",
+        "source_output_sha256": "4e1e1867d8d9748a8eeac35cabe5c6ecc8532f1000e8ae9829d138eefb649165",
+        "source_csv_sha256": "08fd0eb80049a9671008b509c943de2424c3b1a5f00ab5a37b631248d53bf45b"
+      }
+    },
+    "global_accumulator_buffer": {
+      "model_kind": "fixed_bank_macro_replication",
+      "bank_capacity_bits": 16384,
+      "capacity_unit": "bit",
+      "evidence_level": "cacti_architecture_estimate",
+      "macro_characterization": {
+        "capacity_bits": 16384,
+        "bank_count": 1,
+        "input_output_width_bits": 128,
+        "read_write_ports": 1,
+        "device_flavor": "itrs-lstp",
+        "access_time_ns": 0.71894,
+        "subthreshold_leakage_power_w": 5.13732e-8,
+        "gate_leakage_power_w": 4.34823e-8,
+        "power_unit": "W",
+        "source_input_sha256": "1a1aa65f323f09f34b92f673bd1237ce52f18cbd9119500f81e620881642963b",
+        "source_output_sha256": "4e1e1867d8d9748a8eeac35cabe5c6ecc8532f1000e8ae9829d138eefb649165",
+        "source_csv_sha256": "08fd0eb80049a9671008b509c943de2424c3b1a5f00ab5a37b631248d53bf45b"
+      }
+    }
+  },
+  "excluded_blocks": {
+    "global_controller": "outside requested boundary"
+  }
+}

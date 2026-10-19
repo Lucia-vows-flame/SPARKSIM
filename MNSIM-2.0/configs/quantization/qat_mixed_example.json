@@ -1,0 +1,11 @@
+{
+  "schema_id": "mnsim_qat_quantization/v1",
+  "precision_mode": "mixed",
+  "weight_bit": 9,
+  "activation_bit": 9,
+  "activation_quantization": "uniform",
+  "mu": 15.0,
+  "layer_overrides": {
+    "L000": {"weight_bit": 4, "activation_bit": 6}
+  }
+}

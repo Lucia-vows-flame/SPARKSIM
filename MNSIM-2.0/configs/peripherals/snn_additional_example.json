@@ -1,0 +1,32 @@
+{
+  "schema_id": "snn_additional_peripherals/v1",
+  "profile_id": "example_only_not_for_performance_claims",
+  "status": "example_only",
+  "source": "Illustrative SI-unit circuit parameters for exercising the model; not measured or HSPICE-fitted. Replace every parameter with documented hardware estimates or offline calibration before experiments.",
+  "startup_policy": "once_per_sample_instance",
+  "ownership": {
+    "read_supply": "additional_not_in_existing_models",
+    "column_reference": "additional_not_in_existing_models",
+    "arow_row_driver": "additional_not_in_existing_models",
+    "arow_startup": "additional_not_in_existing_models",
+    "spike_interconnect": "additional_not_in_existing_models",
+    "control": "additional_not_in_existing_models",
+    "interface": "additional_not_in_existing_models"
+  },
+  "parameters": {
+    "read_pulse_s": 2e-8,
+    "read_supply_efficiency": 0.9,
+    "read_supply_bias_w_per_pair": 1e-6,
+    "column_reference_w_per_column": 1e-8,
+    "column_reference_capacitance_f_per_column": 1e-15,
+    "column_reference_voltage_v": 0.2,
+    "row_capacitance_f_per_row_per_rail": 1e-15,
+    "row_select_energy_j_per_active_row_per_rail": 1e-16,
+    "row_hold_w_per_active_row_per_rail": 1e-9,
+    "arow_startup_j_per_pair": 1e-14,
+    "control_j_per_read_pair": 1e-15,
+    "spike_link_capacitance_f_per_destination": 1e-15,
+    "spike_voltage_v": 0.7,
+    "interface_j_per_spike_per_destination": 1e-16
+  }
+}

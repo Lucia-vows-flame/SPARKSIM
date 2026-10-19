@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "memtorch": {
+      "commit": "305c3a74f7a5ed08ab12ab1974df62f0df8da469",
+      "files": {
+        "MEMTORCH_LICENSE": {
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "upstream_path": "LICENSE"
+        },
+        "Stanford_PKU.py": {
+          "sha256": "438acba4b4587e8034ab95548fd1b0ea7c7fe0a080410260232160f68e04e28c",
+          "upstream_path": "memtorch/bh/memristor/Stanford_PKU.py"
+        }
+      },
+      "license": "GPL-3.0",
+      "repository": "https://github.com/coreylammie/MemTorch"
+    }
+  }
+}
