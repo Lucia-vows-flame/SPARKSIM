@@ -3,10 +3,10 @@
 The working tree is prepared for a source-focused GitHub repository, but the
 items below need an owner decision before public release.
 
-- **Repository license:** there is no root `LICENSE` file. The original MNSIM
-  source attribution and its redistribution terms need confirmation before a
-  repository-wide license is added. Do not assume a third-party model's license
-  also licenses MNSIM code.
+- **Repository license:** the root MIT `LICENSE` was preserved from the GitHub
+  repository initialization. Third-party source and models retain their own
+  applicable terms; the root license does not replace those terms. Review the
+  original MNSIM redistribution terms and bundled notices before release.
 - **Third-party source review:** inspect every bundled source/model and its
   license. The Stanford-PKU source is MemTorch-derived and GPL-3.0. Preserve
   its notice and determine whether redistribution is compatible with the
