@@ -9,20 +9,20 @@
 htmlcov/
 
 # Reproducible but large local inputs and generated runs
-MNSIM-2.0/inputs/datasets/
-MNSIM-2.0/inputs/weights/
-MNSIM-2.0/runs/
-MNSIM-2.0/exports/
-MNSIM-2.0/deliverables/
-MNSIM-2.0/docs/experiments/
-MNSIM-2.0/PORTABLE_PYTHON_ENV.txt
-MNSIM-2.0/PORTABLE_RUNTIME_INFO.txt
-MNSIM-2.0/PORTABLE_BUNDLE_INFO.txt
+SPARKSIM/inputs/datasets/
+SPARKSIM/inputs/weights/
+SPARKSIM/runs/
+SPARKSIM/exports/
+SPARKSIM/deliverables/
+SPARKSIM/docs/experiments/
+SPARKSIM/PORTABLE_PYTHON_ENV.txt
+SPARKSIM/PORTABLE_RUNTIME_INFO.txt
+SPARKSIM/PORTABLE_BUNDLE_INFO.txt
 
 # Generated native build output
-MNSIM-2.0/third_party/DRAMSim3/build/
-MNSIM-2.0/third_party/DRAMSim3/bin/
-MNSIM-2.0/third_party/DRAMSim3/lib/
+SPARKSIM/third_party/DRAMSim3/build/
+SPARKSIM/third_party/DRAMSim3/bin/
+SPARKSIM/third_party/DRAMSim3/lib/
 
 # Local editor and runtime files
 .vscode/

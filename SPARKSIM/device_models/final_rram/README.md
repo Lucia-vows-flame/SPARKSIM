@@ -21,8 +21,8 @@ codes. The write profile adds ideal compact-model state transitions. Its
 programming reachability is a model prediction, not measured 256-level device
 evidence. See `README_stanford_pku_256.md` for source, conversion, and limits.
 
-Use `configs/SimConfig_rram_stanford_asu_256.ini` for ASU runs,
-`configs/SimConfig_rram_memtorch_stanford_pku_256.ini` for PKU read/accuracy
-runs, and `configs/SimConfig_rram_memtorch_stanford_pku_write256.ini` when
+Use `device_models/final_rram/configs/SimConfig_rram_stanford_asu_256.ini` for ASU runs,
+`device_models/final_rram/configs/SimConfig_rram_memtorch_stanford_pku_256.ini` for PKU read/accuracy
+runs, and `device_models/final_rram/configs/SimConfig_rram_memtorch_stanford_pku_write256.ini` when
 hardware write accounting is required. The nominal-only PKU profile is
 rejected by hardware write workflows.

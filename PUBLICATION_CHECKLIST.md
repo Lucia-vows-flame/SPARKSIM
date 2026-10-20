@@ -17,9 +17,9 @@ items below need an owner decision before public release.
 - **Paper and dataset rights:** papers, publisher templates, manuscript drafts,
   datasets, and trained checkpoints are not part of the curated GitHub source
   release by default. Review individual rights before adding any of them.
-- **Git remote and release identity:** no Git remote is configured. Confirm the
-  destination organization, repository name, visibility, and release tag before
-  publishing.
+- **Git remote and release identity:** the destination repository is
+  `git@github.com:Lucia-vows-flame/SPARKSIM.git`. Release tags and repository
+  visibility are managed separately on GitHub.
 - **Final content review:** inspect the staged file list and scan the complete
   Git history for secrets and material that should not be public. `.gitignore`
   protects local/generated files from new additions; it does not remove files
